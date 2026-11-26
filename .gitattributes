@@ -6,3 +6,8 @@
 *.npz binary
 *.npy binary
 *.pkl binary
+
+# Keep GitHub language statistics focused on the Python implementation
+*.ipynb linguist-vendored
+figure/** linguist-documentation
+docs/** linguist-documentation
