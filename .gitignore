@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.DS_Store
+
+# Logs / temporary files
+*.log
+_tmp/
+_run/
+tmp/
+
+# Regenerable large data
+dataset/noise/**/*.npy
+dataset/noise/_seeds/
+dataset/features/*.npz
+dataset/features/*.json
+dataset/clean/classification_full/data.npz
+dataset/cache/
+
+# Generated figures (not committed)
+figure/generated/
+
+# Local smoke-test outputs
+/out/
