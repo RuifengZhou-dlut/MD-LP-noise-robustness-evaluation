@@ -1,0 +1,50 @@
+{
+  "classification": {
+    "file": "data.npz",
+    "x_train": [
+      20000,
+      32,
+      32,
+      3
+    ],
+    "x_test": [
+      4000,
+      32,
+      32,
+      3
+    ],
+    "classes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "encoding": "uint8 [0,255]",
+    "source": "CIFAR-10 four-class subset (airplane/automobile/ship/truck), 5000 per class",
+    "sha256": "e86be2dbff07caa5910cd94ca5d175c21753bd097dc07456b508fcb0c9f17632",
+    "bytes": 66426894
+  },
+  "regression": {
+    "file": "parts/",
+    "parts": 2,
+    "x_train": [
+      20000,
+      32,
+      32,
+      3
+    ],
+    "x_test": [
+      2000,
+      32,
+      32,
+      3
+    ],
+    "encoding": "float16 [0,1]",
+    "label_encoding": "float64 (age+1)/120",
+    "source": "UTKFace + crop_part1, stratified by 5-year bins, 20000/2000",
+    "sha256_part0": "ee26fe1ace3c468594296f941b128d7f8b77ef905aaec41932720a7a2e7c7ef4",
+    "bytes_part0": 60020962,
+    "sha256_part1": "cbb0a74e3bc350fd7dbc7ab1181484cf2c1635de6e0400a706159c908f2661c1",
+    "bytes_part1": 50026022
+  }
+}
