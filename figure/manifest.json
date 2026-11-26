@@ -1,0 +1,778 @@
+[
+  {
+    "id": "sample_selection_noise",
+    "label": "fig:sel_data",
+    "caption": "Susceptible sample selection and noise imposition",
+    "preview": "figure/png/sample_selection_noise.png",
+    "panels": [
+      [
+        [
+          "s-1.pdf",
+          "Initial samples"
+        ],
+        [
+          "s-2.pdf",
+          "perturbed samples"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "weight_similarity_sampling",
+    "label": "fig:weight_vs_samples",
+    "caption": "Weight cosine similarity under 10 random samplings",
+    "preview": "figure/png/weight_similarity_sampling.png",
+    "panels": [
+      [
+        [
+          "panels/figure2/VGG_L3.pdf",
+          "VGGNet 3-C"
+        ],
+        [
+          "panels/figure2/VGG_L5.pdf",
+          "VGGNet 5-C"
+        ],
+        [
+          "panels/figure2/VGG_L7.pdf",
+          "VGGNet 7-C"
+        ],
+        [
+          "panels/figure2/VGG_L9.pdf",
+          "VGGNet 9-D"
+        ]
+      ],
+      [
+        [
+          "panels/figure2/RES_L3.pdf",
+          "ResNet 3-R"
+        ],
+        [
+          "panels/figure2/RES_L4.pdf",
+          "ResNet 4-R"
+        ],
+        [
+          "panels/figure2/RES_L6.pdf",
+          "ResNet 6-R"
+        ],
+        [
+          "panels/figure2/RES_L8.pdf",
+          "ResNet 8-R"
+        ]
+      ],
+      [
+        [
+          "panels/figure2/legend.pdf",
+          ""
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "weight_stability_noise",
+    "label": "fig:weight_vs_noise",
+    "caption": "Pairwise cosine stability under 10 Gaussian-noise realizations",
+    "preview": "figure/png/weight_stability_noise.png",
+    "panels": [
+      [
+        [
+          "panels/figure3/VGG_L3.pdf",
+          "VGGNet 3-C"
+        ],
+        [
+          "panels/figure3/VGG_L5.pdf",
+          "VGGNet 5-C"
+        ],
+        [
+          "panels/figure3/VGG_L7.pdf",
+          "VGGNet 7-C"
+        ],
+        [
+          "panels/figure3/VGG_L9.pdf",
+          "VGGNet 9-D"
+        ]
+      ],
+      [
+        [
+          "panels/figure3/RES_L3.pdf",
+          "ResNet 3-R"
+        ],
+        [
+          "panels/figure3/RES_L4.pdf",
+          "ResNet 4-R"
+        ],
+        [
+          "panels/figure3/RES_L6.pdf",
+          "ResNet 6-R"
+        ],
+        [
+          "panels/figure3/RES_L8.pdf",
+          "ResNet 8-R"
+        ]
+      ],
+      [
+        [
+          "panels/figure3/legend.pdf",
+          ""
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "classification_overall",
+    "label": "fig_noi_c_over",
+    "caption": "Classification robustness criteria: overall",
+    "preview": "figure/png/classification_overall.png",
+    "panels": [
+      [
+        [
+          "panels/classification/overall/VGG-11.pdf",
+          "VGGNet"
+        ],
+        [
+          "panels/classification/overall/Res-18.pdf",
+          "ResNet"
+        ]
+      ],
+      [
+        [
+          "panels/classification/overall/ViT-8.pdf",
+          "ViT"
+        ],
+        [
+          "panels/classification/overall/Mix-8.pdf",
+          "MLP-Mixer"
+        ]
+      ],
+      [
+        [
+          "panels/legend/conditions.pdf",
+          ""
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "classification_per_class",
+    "label": "fig_noi_c",
+    "caption": "Classification robustness criteria: per-class OVR",
+    "preview": "figure/png/classification_per_class.png",
+    "panels": [
+      [
+        [
+          "panels/classification/class/c1/VGG-11.pdf",
+          "VGGNet (air)"
+        ],
+        [
+          "panels/classification/class/c1/Res-18.pdf",
+          "ResNet (air)"
+        ],
+        [
+          "panels/classification/class/c1/ViT-8.pdf",
+          "ViT (air)"
+        ],
+        [
+          "panels/classification/class/c1/Mix-8.pdf",
+          "MLP-Mixer (air)"
+        ]
+      ],
+      [
+        [
+          "panels/classification/class/c2/VGG-11.pdf",
+          "VGGNet (auto)"
+        ],
+        [
+          "panels/classification/class/c2/Res-18.pdf",
+          "ResNet (auto)"
+        ],
+        [
+          "panels/classification/class/c2/ViT-8.pdf",
+          "ViT (auto)"
+        ],
+        [
+          "panels/classification/class/c2/Mix-8.pdf",
+          "MLP-Mixer (auto)"
+        ]
+      ],
+      [
+        [
+          "panels/classification/class/c3/VGG-11.pdf",
+          "VGGNet (ship)"
+        ],
+        [
+          "panels/classification/class/c3/Res-18.pdf",
+          "ResNet (ship)"
+        ],
+        [
+          "panels/classification/class/c3/ViT-8.pdf",
+          "ViT (ship)"
+        ],
+        [
+          "panels/classification/class/c3/Mix-8.pdf",
+          "MLP-Mixer (ship)"
+        ]
+      ],
+      [
+        [
+          "panels/classification/class/c4/VGG-11.pdf",
+          "VGGNet (truck)"
+        ],
+        [
+          "panels/classification/class/c4/Res-18.pdf",
+          "ResNet (truck)"
+        ],
+        [
+          "panels/classification/class/c4/ViT-8.pdf",
+          "ViT (truck)"
+        ],
+        [
+          "panels/classification/class/c4/Mix-8.pdf",
+          "MLP-Mixer (truck)"
+        ]
+      ],
+      [
+        [
+          "panels/legend/conditions.pdf",
+          ""
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "classification_full_cifar10",
+    "label": "fig:sub_cla_full",
+    "caption": "Full CIFAR-10 robustness criteria",
+    "preview": "figure/png/classification_full_cifar10.png",
+    "panels": [
+      [
+        [
+          "panels/classification_full/overall/VGG-11.pdf",
+          "VGGNet"
+        ],
+        [
+          "panels/classification_full/overall/Res-18.pdf",
+          "ResNet"
+        ]
+      ],
+      [
+        [
+          "panels/classification_full/overall/ViT-8.pdf",
+          "ViT"
+        ],
+        [
+          "panels/classification_full/overall/Mix-8.pdf",
+          "MLP-Mixer"
+        ]
+      ],
+      [
+        [
+          "panels/legend/conditions.pdf",
+          ""
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "regression_overall",
+    "label": "fig_noi_r_over",
+    "caption": "Regression robustness criteria: overall",
+    "preview": "figure/png/regression_overall.png",
+    "panels": [
+      [
+        [
+          "panels/regression/overall/VGG-11.pdf",
+          "VGGNet"
+        ],
+        [
+          "panels/regression/overall/Res-18.pdf",
+          "ResNet"
+        ]
+      ],
+      [
+        [
+          "panels/regression/overall/ViT-8.pdf",
+          "ViT"
+        ],
+        [
+          "panels/regression/overall/Mix-8.pdf",
+          "MLP-Mixer"
+        ]
+      ],
+      [
+        [
+          "panels/legend/conditions.pdf",
+          ""
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "regression_thresholds_1_5",
+    "label": "fig_noi_c1",
+    "caption": "Regression robustness criteria: thresholds 1-5",
+    "preview": "figure/png/regression_thresholds_1_5.png",
+    "panels": [
+      [
+        [
+          "panels/regression/thrA/t1/VGG-11.pdf",
+          "VGGNet (τ1)"
+        ],
+        [
+          "panels/regression/thrA/t1/Res-18.pdf",
+          "ResNet (τ1)"
+        ],
+        [
+          "panels/regression/thrA/t1/ViT-8.pdf",
+          "ViT (τ1)"
+        ],
+        [
+          "panels/regression/thrA/t1/Mix-8.pdf",
+          "MLP-Mixer (τ1)"
+        ]
+      ],
+      [
+        [
+          "panels/regression/thrA/t2/VGG-11.pdf",
+          "VGGNet (τ2)"
+        ],
+        [
+          "panels/regression/thrA/t2/Res-18.pdf",
+          "ResNet (τ2)"
+        ],
+        [
+          "panels/regression/thrA/t2/ViT-8.pdf",
+          "ViT (τ2)"
+        ],
+        [
+          "panels/regression/thrA/t2/Mix-8.pdf",
+          "MLP-Mixer (τ2)"
+        ]
+      ],
+      [
+        [
+          "panels/regression/thrA/t3/VGG-11.pdf",
+          "VGGNet (τ3)"
+        ],
+        [
+          "panels/regression/thrA/t3/Res-18.pdf",
+          "ResNet (τ3)"
+        ],
+        [
+          "panels/regression/thrA/t3/ViT-8.pdf",
+          "ViT (τ3)"
+        ],
+        [
+          "panels/regression/thrA/t3/Mix-8.pdf",
+          "MLP-Mixer (τ3)"
+        ]
+      ],
+      [
+        [
+          "panels/regression/thrA/t4/VGG-11.pdf",
+          "VGGNet (τ4)"
+        ],
+        [
+          "panels/regression/thrA/t4/Res-18.pdf",
+          "ResNet (τ4)"
+        ],
+        [
+          "panels/regression/thrA/t4/ViT-8.pdf",
+          "ViT (τ4)"
+        ],
+        [
+          "panels/regression/thrA/t4/Mix-8.pdf",
+          "MLP-Mixer (τ4)"
+        ]
+      ],
+      [
+        [
+          "panels/regression/thrA/t5/VGG-11.pdf",
+          "VGGNet (τ5)"
+        ],
+        [
+          "panels/regression/thrA/t5/Res-18.pdf",
+          "ResNet (τ5)"
+        ],
+        [
+          "panels/regression/thrA/t5/ViT-8.pdf",
+          "ViT (τ5)"
+        ],
+        [
+          "panels/regression/thrA/t5/Mix-8.pdf",
+          "MLP-Mixer (τ5)"
+        ]
+      ],
+      [
+        [
+          "panels/legend/conditions.pdf",
+          ""
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "regression_thresholds_6_9",
+    "label": "fig_noi_c2",
+    "caption": "Regression robustness criteria: thresholds 6-9",
+    "preview": "figure/png/regression_thresholds_6_9.png",
+    "panels": [
+      [
+        [
+          "panels/regression/thrB/t6/VGG-11.pdf",
+          "VGGNet (τ6)"
+        ],
+        [
+          "panels/regression/thrB/t6/Res-18.pdf",
+          "ResNet (τ6)"
+        ],
+        [
+          "panels/regression/thrB/t6/ViT-8.pdf",
+          "ViT (τ6)"
+        ],
+        [
+          "panels/regression/thrB/t6/Mix-8.pdf",
+          "MLP-Mixer (τ6)"
+        ]
+      ],
+      [
+        [
+          "panels/regression/thrB/t7/VGG-11.pdf",
+          "VGGNet (τ7)"
+        ],
+        [
+          "panels/regression/thrB/t7/Res-18.pdf",
+          "ResNet (τ7)"
+        ],
+        [
+          "panels/regression/thrB/t7/ViT-8.pdf",
+          "ViT (τ7)"
+        ],
+        [
+          "panels/regression/thrB/t7/Mix-8.pdf",
+          "MLP-Mixer (τ7)"
+        ]
+      ],
+      [
+        [
+          "panels/regression/thrB/t8/VGG-11.pdf",
+          "VGGNet (τ8)"
+        ],
+        [
+          "panels/regression/thrB/t8/Res-18.pdf",
+          "ResNet (τ8)"
+        ],
+        [
+          "panels/regression/thrB/t8/ViT-8.pdf",
+          "ViT (τ8)"
+        ],
+        [
+          "panels/regression/thrB/t8/Mix-8.pdf",
+          "MLP-Mixer (τ8)"
+        ]
+      ],
+      [
+        [
+          "panels/regression/thrB/t9/VGG-11.pdf",
+          "VGGNet (τ9)"
+        ],
+        [
+          "panels/regression/thrB/t9/Res-18.pdf",
+          "ResNet (τ9)"
+        ],
+        [
+          "panels/regression/thrB/t9/ViT-8.pdf",
+          "ViT (τ9)"
+        ],
+        [
+          "panels/regression/thrB/t9/Mix-8.pdf",
+          "MLP-Mixer (τ9)"
+        ]
+      ],
+      [
+        [
+          "panels/legend/conditions.pdf",
+          ""
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "standard_error_heatmap",
+    "label": "fig:std_heat",
+    "caption": "Standard error heatmap",
+    "preview": "figure/png/standard_error_heatmap.png",
+    "panels": [
+      [
+        [
+          "panels/heatmap/classification/attack.pdf",
+          "Attack"
+        ],
+        [
+          "panels/heatmap/regression/attack.pdf",
+          "Attack"
+        ]
+      ],
+      [
+        [
+          "panels/heatmap/classification/gauss.pdf",
+          "Gauss"
+        ],
+        [
+          "panels/heatmap/regression/gauss.pdf",
+          "Gauss"
+        ]
+      ],
+      [
+        [
+          "panels/heatmap/classification/salt.pdf",
+          "Salt"
+        ],
+        [
+          "panels/heatmap/regression/salt.pdf",
+          "Salt"
+        ]
+      ],
+      [
+        [
+          "panels/heatmap/classification/move.pdf",
+          "Move"
+        ],
+        [
+          "panels/heatmap/regression/move.pdf",
+          "Move"
+        ]
+      ],
+      [
+        [
+          "panels/heatmap/classification/occ.pdf",
+          "Occ"
+        ],
+        [
+          "panels/heatmap/regression/occ.pdf",
+          "Occ"
+        ]
+      ],
+      [
+        [
+          "panels/heatmap/cbar_classification.pdf",
+          ""
+        ],
+        [
+          "panels/heatmap/cbar_regression.pdf",
+          ""
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "noise_trained_radar",
+    "label": "fig:comp_acc",
+    "caption": "Clean vs noise-trained comparison (radar)",
+    "preview": "figure/png/noise_trained_radar.png",
+    "panels": [
+      [
+        [
+          "panels/classification/radar/VGG-11.pdf",
+          "VGGNet"
+        ],
+        [
+          "panels/classification/radar/Res-18.pdf",
+          "ResNet"
+        ],
+        [
+          "panels/classification/radar/ViT-8.pdf",
+          "ViT"
+        ],
+        [
+          "panels/classification/radar/Mix-8.pdf",
+          "MLP-Mixer"
+        ]
+      ],
+      [
+        [
+          "panels/legend/training.pdf",
+          ""
+        ]
+      ],
+      [
+        [
+          "panels/regression/radar/VGG-11_gauss.pdf",
+          "VGGNet (gauss)"
+        ],
+        [
+          "panels/regression/radar/Res-18_gauss.pdf",
+          "ResNet (gauss)"
+        ],
+        [
+          "panels/regression/radar/ViT-8_gauss.pdf",
+          "ViT (gauss)"
+        ],
+        [
+          "panels/regression/radar/Mix-8_gauss.pdf",
+          "MLP-Mixer (gauss)"
+        ]
+      ],
+      [
+        [
+          "panels/regression/radar/VGG-11_salt.pdf",
+          "VGGNet (salt)"
+        ],
+        [
+          "panels/regression/radar/Res-18_salt.pdf",
+          "ResNet (salt)"
+        ],
+        [
+          "panels/regression/radar/ViT-8_salt.pdf",
+          "ViT (salt)"
+        ],
+        [
+          "panels/regression/radar/Mix-8_salt.pdf",
+          "MLP-Mixer (salt)"
+        ]
+      ],
+      [
+        [
+          "panels/legend/training.pdf",
+          ""
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "classification_noise_metric",
+    "label": "fig:comp_acc_s1",
+    "caption": "Classification noise metric comparison",
+    "preview": "figure/png/classification_noise_metric.png",
+    "panels": [
+      [
+        [
+          "panels/extra/noise_metric_classification_gauss_VGG-11.pdf",
+          "VGGNet (Gauss)"
+        ],
+        [
+          "panels/extra/noise_metric_classification_gauss_Res-18.pdf",
+          "ResNet (Gauss)"
+        ],
+        [
+          "panels/extra/noise_metric_classification_gauss_ViT-8.pdf",
+          "ViT (Gauss)"
+        ],
+        [
+          "panels/extra/noise_metric_classification_gauss_Mix-8.pdf",
+          "MLP-Mixer (Gauss)"
+        ]
+      ],
+      [
+        [
+          "panels/extra/noise_metric_classification_salt_VGG-11.pdf",
+          "VGGNet (Salt)"
+        ],
+        [
+          "panels/extra/noise_metric_classification_salt_Res-18.pdf",
+          "ResNet (Salt)"
+        ],
+        [
+          "panels/extra/noise_metric_classification_salt_ViT-8.pdf",
+          "ViT (Salt)"
+        ],
+        [
+          "panels/extra/noise_metric_classification_salt_Mix-8.pdf",
+          "MLP-Mixer (Salt)"
+        ]
+      ],
+      [
+        [
+          "panels/extra/legend_pair.pdf",
+          ""
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "regression_noise_metric",
+    "label": "fig:comp_acc_s2",
+    "caption": "Regression noise metric comparison",
+    "preview": "figure/png/regression_noise_metric.png",
+    "panels": [
+      [
+        [
+          "panels/extra/noise_metric_regression_gauss_VGG-11.pdf",
+          "VGGNet (Gauss)"
+        ],
+        [
+          "panels/extra/noise_metric_regression_gauss_Res-18.pdf",
+          "ResNet (Gauss)"
+        ],
+        [
+          "panels/extra/noise_metric_regression_gauss_ViT-8.pdf",
+          "ViT (Gauss)"
+        ],
+        [
+          "panels/extra/noise_metric_regression_gauss_Mix-8.pdf",
+          "MLP-Mixer (Gauss)"
+        ]
+      ],
+      [
+        [
+          "panels/extra/noise_metric_regression_salt_VGG-11.pdf",
+          "VGGNet (Salt)"
+        ],
+        [
+          "panels/extra/noise_metric_regression_salt_Res-18.pdf",
+          "ResNet (Salt)"
+        ],
+        [
+          "panels/extra/noise_metric_regression_salt_ViT-8.pdf",
+          "ViT (Salt)"
+        ],
+        [
+          "panels/extra/noise_metric_regression_salt_Mix-8.pdf",
+          "MLP-Mixer (Salt)"
+        ]
+      ],
+      [
+        [
+          "panels/extra/legend_pair.pdf",
+          ""
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "susceptible_ratio_sensitivity",
+    "label": "fig:s_scan",
+    "caption": "Sensitivity to susceptible-sample ratio s",
+    "preview": "figure/png/susceptible_ratio_sensitivity.png",
+    "panels": [
+      [
+        [
+          "panels/s_scan/s_scan_attack.pdf",
+          "Attack"
+        ],
+        [
+          "panels/s_scan/s_scan_gauss.pdf",
+          "Gauss"
+        ],
+        [
+          "panels/s_scan/s_scan_salt.pdf",
+          "Salt"
+        ]
+      ],
+      [
+        [
+          "panels/s_scan/s_scan_move.pdf",
+          "Move"
+        ],
+        [
+          "panels/s_scan/s_scan_occ.pdf",
+          "Occ"
+        ]
+      ],
+      [
+        [
+          "panels/s_scan/legend_s_scan.pdf",
+          ""
+        ]
+      ]
+    ]
+  }
+]
