@@ -1,0 +1,39 @@
+{
+  "site": "RES_L4",
+  "model": "Res-18",
+  "method": "ls",
+  "class_idx": 0,
+  "d": 4096,
+  "n": 20000,
+  "repeats": 2,
+  "times": [
+    11.850261215120554,
+    11.81631314754486
+  ],
+  "time_median": 11.833287181332707,
+  "time_min": 11.81631314754486,
+  "time_max": 11.850261215120554,
+  "peak_rss_delta_bytes": 1971781632,
+  "baseline_rss_bytes": 721661952,
+  "timings": {
+    "preprocess": 1.0106834322214127,
+    "solve": 10.802270155400038,
+    "total": 11.813450817018747
+  },
+  "info": {
+    "method": "least_squares",
+    "rank": 4097,
+    "n_singular": 4097,
+    "cond": 103.26215771190216,
+    "standardize": true,
+    "n_iter": 20000
+  },
+  "train_accuracy": 0.9976,
+  "probe_norm": 1.0,
+  "env": {
+    "cpu_count": 96,
+    "omp": "8",
+    "mkl": "8",
+    "openblas": "8"
+  }
+}

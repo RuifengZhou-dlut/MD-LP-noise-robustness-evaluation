@@ -1,0 +1,38 @@
+{
+  "site": "RES_L2",
+  "model": "Res-18",
+  "method": "ls",
+  "class_idx": 0,
+  "d": 8192,
+  "n": 20000,
+  "repeats": 1,
+  "times": [
+    60.45343244820833
+  ],
+  "time_median": 60.45343244820833,
+  "time_min": 60.45343244820833,
+  "time_max": 60.45343244820833,
+  "peak_rss_delta_bytes": 3944058880,
+  "baseline_rss_bytes": 1376985088,
+  "timings": {
+    "preprocess": 1.8732654452323914,
+    "solve": 58.574134189635515,
+    "total": 60.44797441735864
+  },
+  "info": {
+    "method": "least_squares",
+    "rank": 8193,
+    "n_singular": 8193,
+    "cond": 496.31671184861597,
+    "standardize": true,
+    "n_iter": 20000
+  },
+  "train_accuracy": 0.9864,
+  "probe_norm": 1.0,
+  "env": {
+    "cpu_count": 96,
+    "omp": "8",
+    "mkl": "8",
+    "openblas": "8"
+  }
+}

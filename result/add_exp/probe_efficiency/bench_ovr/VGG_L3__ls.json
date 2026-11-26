@@ -1,0 +1,39 @@
+{
+  "site": "VGG_L3",
+  "model": "VGG-11",
+  "method": "ls",
+  "class_idx": 0,
+  "d": 4096,
+  "n": 20000,
+  "repeats": 2,
+  "times": [
+    11.908599007874727,
+    11.913959264755249
+  ],
+  "time_median": 11.911279136314988,
+  "time_min": 11.908599007874727,
+  "time_max": 11.913959264755249,
+  "peak_rss_delta_bytes": 1971724288,
+  "baseline_rss_bytes": 720019456,
+  "timings": {
+    "preprocess": 1.0090324394404888,
+    "solve": 10.901638932526112,
+    "total": 11.91112669929862
+  },
+  "info": {
+    "method": "least_squares",
+    "rank": 4097,
+    "n_singular": 4097,
+    "cond": 70.97002978217228,
+    "standardize": true,
+    "n_iter": 20000
+  },
+  "train_accuracy": 0.98965,
+  "probe_norm": 1.0,
+  "env": {
+    "cpu_count": 96,
+    "omp": "8",
+    "mkl": "8",
+    "openblas": "8"
+  }
+}

@@ -1,0 +1,43 @@
+% Packages: booktabs, multirow, amsmath. Switch table -> table* for two-column layouts.
+% Scores are recomputed from the pkl files at full precision and rounded once to 3 significant
+% figures; the 4-decimal values in score_report.md may differ by up to 0.0005 (0.6345 -> 0.635).
+\begin{table}[htbp]
+  \centering
+  \caption{Weighted robustness scores and rankings under four weighting schemes}
+  \label{tab:score}
+  \begin{tabular}{@{}lllcccc@{}}
+    \toprule
+    \multirow{2}{*}{Task} & \multirow{2}{*}{Network} & \multirow{2}{*}{Metric} & \multicolumn{4}{c}{Weighting} \\
+    \cmidrule(l){4-7}
+    & & & Average & $\gamma_p$-dominant & $\gamma_g$-dominant & $\gamma_s$-dominant \\
+    \midrule
+    \multirow{8}{*}{Classification} & \multirow{2}{*}{VGG-11} & Score & 0.648 & 0.512 & 0.657 & 0.693 \\
+    & & Rank & 2 & 1 & 2 & 2 \\
+    \addlinespace[2pt]
+     & \multirow{2}{*}{Res-18} & Score & 0.635 & 0.494 & 0.625 & 0.671 \\
+    & & Rank & 3 & 3 & 4 & 3 \\
+    \addlinespace[2pt]
+     & \multirow{2}{*}{ViT-8} & Score & 0.620 & 0.462 & 0.626 & 0.661 \\
+    & & Rank & 4 & 4 & 3 & 4 \\
+    \addlinespace[2pt]
+     & \multirow{2}{*}{Mix-8} & Score & 0.660 & 0.494 & 0.668 & 0.702 \\
+    & & Rank & 1 & 2 & 1 & 1 \\
+    \midrule
+    \multirow{8}{*}{Regression} & \multirow{2}{*}{VGG-11} & Score & 0.649 & 0.544 & 0.645 & 0.685 \\
+    & & Rank & 1 & 2 & 1 & 1 \\
+    \addlinespace[2pt]
+     & \multirow{2}{*}{Res-18} & Score & 0.627 & 0.544 & 0.607 & 0.654 \\
+    & & Rank & 2 & 1 & 2 & 2 \\
+    \addlinespace[2pt]
+     & \multirow{2}{*}{ViT-8} & Score & 0.613 & 0.518 & 0.560 & 0.630 \\
+    & & Rank & 4 & 3 & 4 & 3 \\
+    \addlinespace[2pt]
+     & \multirow{2}{*}{Mix-8} & Score & 0.619 & 0.515 & 0.590 & 0.624 \\
+    & & Rank & 3 & 4 & 3 & 4 \\
+    \bottomrule
+  \end{tabular}
+  \par\smallskip
+  \begin{minipage}{\linewidth}
+    \footnotesize Note: higher score = more robust; rank 1 = most robust. Scores use 3 significant figures, ranks are from full-precision scores. Classification, $\gamma_p$-dominant: Mix-8 and Res-18 both 0.494 (gap 0.0005, below $2\sigma$; ranks 2, 3 tied); Regression, $\gamma_p$-dominant: Res-18 and VGG-11 both 0.544 (gap 0.0007, below $2\sigma$; ranks 1, 2 tied).
+  \end{minipage}
+\end{table}

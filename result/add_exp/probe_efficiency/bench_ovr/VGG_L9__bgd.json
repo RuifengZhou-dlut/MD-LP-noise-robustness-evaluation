@@ -1,0 +1,47 @@
+{
+  "site": "VGG_L9",
+  "model": "VGG-11",
+  "method": "bgd",
+  "class_idx": 0,
+  "d": 256,
+  "n": 20000,
+  "repeats": 5,
+  "times": [
+    6.865584179759026,
+    5.990542974323034,
+    6.937859058380127,
+    7.093853827565908,
+    6.463985618203878
+  ],
+  "time_median": 6.865584179759026,
+  "time_min": 5.990542974323034,
+  "time_max": 7.093853827565908,
+  "peak_rss_delta_bytes": 82014208,
+  "baseline_rss_bytes": 98775040,
+  "timings": {
+    "preprocess": 0.050792742520570755,
+    "curvature": 0.022113852202892303,
+    "train": 6.390582695603371,
+    "post": 7.028505206108093e-05,
+    "total": 6.463715858757496
+  },
+  "info": {
+    "method": "logistic_bgd",
+    "iterations": 3000,
+    "grad_norm": 0.0022219050529644533,
+    "loss": 0.004969851208700613,
+    "lr": 0.05855977852115893,
+    "lam": 0.0001,
+    "curvature": 17.076567317253055,
+    "standardize": true,
+    "n_iter": 20000
+  },
+  "train_accuracy": 0.9991,
+  "probe_norm": 1.0,
+  "env": {
+    "cpu_count": 96,
+    "omp": "8",
+    "mkl": "8",
+    "openblas": "8"
+  }
+}

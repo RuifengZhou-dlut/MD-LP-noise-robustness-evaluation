@@ -1,0 +1,42 @@
+{
+  "site": "RES_L2",
+  "model": "Res-18",
+  "method": "sgd",
+  "class_idx": 0,
+  "d": 8192,
+  "n": 20000,
+  "repeats": 1,
+  "times": [
+    7.719070855528116
+  ],
+  "time_median": 7.719070855528116,
+  "time_min": 7.719070855528116,
+  "time_max": 7.719070855528116,
+  "peak_rss_delta_bytes": 2618179584,
+  "baseline_rss_bytes": 1362006016,
+  "timings": {
+    "preprocess": 1.4969120658934116,
+    "train": 6.218695502728224,
+    "post": 0.0002725571393966675,
+    "total": 7.716450806707144
+  },
+  "info": {
+    "method": "logistic_sgd",
+    "epochs": 30,
+    "updates": 4710,
+    "loss": 0.05187595490620254,
+    "batch_size": 128,
+    "lr0": 0.05,
+    "lam": 0.0001,
+    "standardize": true,
+    "n_iter": 20000
+  },
+  "train_accuracy": 0.9945,
+  "probe_norm": 0.9999999999999998,
+  "env": {
+    "cpu_count": 96,
+    "omp": "8",
+    "mkl": "8",
+    "openblas": "8"
+  }
+}

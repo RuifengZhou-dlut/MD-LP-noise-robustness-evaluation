@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+	\caption{Rankings of the four networks under each noise type for different selection ratios $s$ (rank $1$ = most robust; $\gamma_p$ PGD, $\gamma_g$ Gaussian, $\gamma_s$ salt-pepper, $\gamma_m$ motion-blur, $\gamma_o$ occlusion). The evaluation follows the main experiment: only samples the network classifies correctly are kept, and each facet takes the $\lfloor s\,n_{\mathrm{pos}}\rfloor$ / $\lfloor s\,n_{\mathrm{neg}}\rfloor$ smallest-margin ones; the $s=0.2$ column is the main-experiment result. Two networks share a rank when their accuracy differs by less than the tie threshold $2.77\,\mathrm{SE}_s$ given in the table note.}
+	\label{tab:rank_s_maincal}
+	\centering
+	\setlength{\tabcolsep}{4pt}
+	\begin{threeparttable}
+		\begin{tabular}{l*{20}{c}}
+			\toprule
+			\multicolumn{1}{c}{} & \multicolumn{4}{c}{$\gamma_p$} & \multicolumn{4}{c}{$\gamma_g$} & \multicolumn{4}{c}{$\gamma_s$} & \multicolumn{4}{c}{$\gamma_m$} & \multicolumn{4}{c}{$\gamma_o$} \\
+			\cmidrule(lr){2-5} \cmidrule(lr){6-9} \cmidrule(lr){10-13} \cmidrule(lr){14-17} \cmidrule(lr){18-21}
+			\multicolumn{1}{c}{} & 0.2 & 0.4 & 0.6 & 0.8 & 0.2 & 0.4 & 0.6 & 0.8 & 0.2 & 0.4 & 0.6 & 0.8 & 0.2 & 0.4 & 0.6 & 0.8 & 0.2 & 0.4 & 0.6 & 0.8 \\
+			\midrule
+			VGGNet & 1 & 1 & 1 & 1 & 2 & 2 & 2 & 1 & 2 & 2 & 3 & 4 & 4 & 4 & 4 & 4 & 3 & 3 & 4 & 4 \\
+			ResNet & 2 & 2 & 2 & 2 & 4 & 4 & 3 & 3 & 3 & 4 & 3 & 3 & 2 & 3 & 3 & 3 & 1 & 1 & 1 & 1 \\
+			ViT & 4 & 4 & 4 & 4 & 3 & 3 & 3 & 4 & 4 & 3 & 2 & 2 & 2 & 2 & 2 & 2 & 4 & 3 & 3 & 3 \\
+			MLP-Mixer & 3 & 3 & 3 & 2 & 1 & 1 & 1 & 2 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 2 & 2 & 2 \\
+			\bottomrule
+		\end{tabular}
+		\begin{tablenotes}
+			\footnotesize
+			\item[*] Accuracies are whole-network OVR means over ten repeated noise realizations. The tie threshold is $2.77\,\mathrm{SE}_s$, with $\mathrm{SE}_s$ the largest standard error among the four networks and five noise types at that $s$: $4.94, 2.37, 1.97, 1.80$ ($\times 10^{-3}$) for $s = 0.2, 0.4, 0.6, 0.8$, respectively.
+		\end{tablenotes}
+	\end{threeparttable}
+\end{table}

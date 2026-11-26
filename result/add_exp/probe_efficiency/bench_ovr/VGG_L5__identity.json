@@ -1,0 +1,47 @@
+{
+  "site": "VGG_L5",
+  "model": "VGG-11",
+  "method": "identity",
+  "class_idx": 0,
+  "d": 2048,
+  "n": 20000,
+  "repeats": 3,
+  "times": [
+    0.4072539694607258,
+    0.4073263891041279,
+    0.4089794233441353
+  ],
+  "time_median": 0.4073263891041279,
+  "time_min": 0.4072539694607258,
+  "time_max": 0.4089794233441353,
+  "peak_rss_delta_bytes": 395079680,
+  "baseline_rss_bytes": 378654720,
+  "timings": {
+    "moments": 0.40297313034534454,
+    "assemble": 0.0,
+    "solve": 0.0,
+    "bias": 0.0052227601408958435,
+    "total": 0.408415324985981
+  },
+  "info": {
+    "mode": "identity",
+    "n": 20000,
+    "d": 2048,
+    "I": 5000,
+    "J": 15000,
+    "rank": 2048,
+    "cond": 1.0,
+    "b_bracket": [
+      -2112791319.6372652,
+      -2112316274.2933314
+    ]
+  },
+  "train_accuracy": 0.9888,
+  "probe_norm": 1.0,
+  "env": {
+    "cpu_count": 96,
+    "omp": "8",
+    "mkl": "8",
+    "openblas": "8"
+  }
+}
